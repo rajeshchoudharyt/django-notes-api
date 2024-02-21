@@ -37,6 +37,7 @@ Clone this repository to your local machine and then cd .. to the root folder
 ### Prerequisites to test API:
 
 Install VS Code and install extension REST Client by Huachao Mao
+
 Open test-api.rest file and start sending request to the backend API
 
 ## Database Tables
