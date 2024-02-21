@@ -2,8 +2,9 @@
 
 ### Prerequisites:
 
-Python and pip installed
-Clone this repository to your local machine and then cd .. to the root folder
+Install python and pip
+
+Clone this repository to your local machine. Follow below steps starting from the root directory
 
 ## Getting started:
 
