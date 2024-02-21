@@ -1,22 +1,50 @@
-Django Backend API
+# Django Backend API
 
-Getting started:
+### Prerequisites:
 
-Prerequisites: Python and pip installed
+Python and pip installed
+Clone this repository to your local machine and then cd .. to the root folder
+
+## Getting started:
 
 1. Create a virtual environment
-   py -m venv env
+   `py -m venv env`
 
 2. Activate virtual environment
-   env\Scripts\activate.bat # For Mac: source env/bin/activate
+
+    ```
+    For windows: env\Scripts\activate.bat
+    For Mac: source env/bin/activate
+    ```
 
 3. Installing dependencies
-   pip install django
-   pip install djangorestframework
+
+    ```
+    pip install django
+    pip install djangorestframework
+    ```
 
 4. Syncing database
-   py manage.py makemigrations
-   py manage.py migrate
+
+    ```
+    py manage.py makemigrations
+    py manage.py migrate
+    ```
 
 5. Run server
-   py manage.py runserver
+   `py manage.py runserver`
+
+### Prerequisites to test API:
+
+Install VS Code and install extension REST Client by Huachao Mao
+Open test-api.rest file and start sending request to the backend API
+
+## Database Tables
+
+> USER : Fields ( id, username, email, password )
+
+> NOTE : Fields ( note_id, email, title, content, date_created )
+
+> EDIT_NOTE : Fields ( note_id, user_id, date_edited, content )
+
+> SHARE_NOTE : Fields ( note_id, user_id )
