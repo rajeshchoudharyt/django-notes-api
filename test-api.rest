@@ -1,0 +1,80 @@
+
+@baseUrl = http://127.0.0.1:8000
+
+### SIGNUP
+POST {{baseUrl}}/signup/
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "username": "user01",
+    "email": "user01@note.com",
+    "password": "password.12"
+}
+
+
+### LOGIN
+POST {{baseUrl}}/login/
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "username": "user01@note.com",
+    "password": "password.12"
+}
+
+### LOGOUT
+GET {{baseUrl}}/logout/
+
+
+### CREATE NOTE
+POST {{baseUrl}}/notes/create/
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "email": "user01@note.com",
+    "title": "My title 1",
+    "content": "My content 1"
+}
+
+
+### SHARE NOTE
+POST {{baseUrl}}/notes/share/
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "note_id": 1,
+    "users": ["user02@note.com", "user03@note.com"]
+}
+
+
+### RETRIEVE NOTE BY ID
+GET {{baseUrl}}/notes/1
+Connection: keep-alive
+
+
+### EDIT NOTE BY ID
+PUT {{baseUrl}}/notes/1/
+Content-Type: application/json
+Accept: */*
+Accept-Encoding: gzip, deflate, br
+Connection: keep-alive
+
+{
+    "content": "Edited content"
+}
+
+
+### NOTE VERSION HISTORY
+GET {{baseUrl}}/notes/version-history/2
+Connection: keep-alive
