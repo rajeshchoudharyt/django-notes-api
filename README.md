@@ -1,4 +1,4 @@
-# Django Backend API
+# Django Backend - Notes API
 
 ### Prerequisites:
 
